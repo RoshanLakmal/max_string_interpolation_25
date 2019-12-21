@@ -21,7 +21,7 @@ export class ServersComponent implements OnInit {
  
  //Use on to say that this will be triggered by this template
  onCreateServer() {
-   this.serverCreationStatus = 'Server was created!';
+   this.serverCreationStatus = 'Server was created! Name is '+ this.serverName;
  }
  onUpdateServerName(event: Event){
   this.serverName = (<HTMLInputElement>event.target).value; //target is type input element so we need to cast it 
